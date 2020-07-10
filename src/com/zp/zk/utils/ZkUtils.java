@@ -1,4 +1,4 @@
-package com.zp.zk.config;
+package com.zp.zk.utils;
 import org.apache.zookeeper.ZooKeeper;
 import java.util.concurrent.CountDownLatch;
 /**
@@ -6,7 +6,7 @@ import java.util.concurrent.CountDownLatch;
  * @create 2020-07-07 16:42
  */
 public class ZkUtils {
-    private static final String address="192.168.150.61:2181,192.168.150.62:2181,192.168.150.63:2181/testConf";
+    private static final String address="192.168.150.61:2181,192.168.150.62:2181,192.168.150.63:2181/testLock";
     //默认的watch,是session级别的，不是path级别的
     private static DefaultWatch watch=new DefaultWatch();
     private static ZooKeeper zk;
